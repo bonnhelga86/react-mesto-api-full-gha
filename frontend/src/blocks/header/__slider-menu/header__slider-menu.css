@@ -1,0 +1,15 @@
+.header__slider-menu {
+  width: 24px;
+  display: none;
+  /* flex-direction: column;
+  gap: 9px; */
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .header__slider-menu {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+}

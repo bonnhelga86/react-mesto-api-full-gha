@@ -1,0 +1,10 @@
+.sign__input {
+  background: inherit;
+  border-bottom: 2px solid #ccc;
+  font-weight: 500;
+  color: #fff;
+}
+
+.sign__input::placeholder {
+  font-weight: 400;
+}

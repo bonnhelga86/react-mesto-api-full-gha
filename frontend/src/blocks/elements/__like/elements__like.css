@@ -1,0 +1,22 @@
+.elements__like {
+  border: none;
+  padding: 0;
+  position: absolute;
+  width: 22px;
+  height: 19px;
+  background: url(../../../images/icon-like.svg);
+  background-size: cover;
+  /* top: 30px; */
+  top: 22px;
+  right: 20px;
+}
+
+.elements__like:hover {
+  cursor: pointer;
+  opacity: .5;
+}
+
+.elements__like:active {
+  opacity: 1;
+  background: url(../../../images/icon-like-active.svg);
+}

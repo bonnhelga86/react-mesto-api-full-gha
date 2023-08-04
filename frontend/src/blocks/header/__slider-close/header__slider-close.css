@@ -1,0 +1,6 @@
+.header__slider-close {
+  background: url(../../../images/icon-close.svg);
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}

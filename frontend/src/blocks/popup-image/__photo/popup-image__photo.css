@@ -1,0 +1,7 @@
+.popup-image__photo {
+  object-fit: cover;
+  width: 100%;
+  display: block;
+  max-height: 75vh;
+  margin-bottom: 10px;
+}

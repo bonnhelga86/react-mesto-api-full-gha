@@ -1,0 +1,15 @@
+.sign__button {
+  border: none;
+  border-radius: 2px;
+  background: #fff;
+  color: #000;
+  margin-top: 186px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 457px) {
+  .sign__button {
+    margin-top: 143px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,6 @@
+.header__slider-open {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}

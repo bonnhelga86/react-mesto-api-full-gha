@@ -1,0 +1,25 @@
+.profile__image {
+  width: 120px;
+  aspect-ratio: 12/12;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile__image:hover {
+  cursor: pointer;
+  opacity: .2;
+}
+
+/* @media screen and (max-width: 885px) {
+  .profile__image {
+    margin-left: -22px;
+  }
+} */
+
+@media screen and (max-width: 700px) {
+  .profile__image {
+    align-self: center;
+    margin-left: 34px;
+    margin-bottom: 26px;
+  }
+}

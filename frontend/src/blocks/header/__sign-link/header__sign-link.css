@@ -1,0 +1,14 @@
+.header__sign-link {
+  color: #a9a9a9;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 457px) {
+  .header__sign-link {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

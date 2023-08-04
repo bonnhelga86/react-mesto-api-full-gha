@@ -1,0 +1,15 @@
+.sign__link {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 80px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 457px) {
+  .sign__link {
+    margin-bottom: 40px;
+  }
+}

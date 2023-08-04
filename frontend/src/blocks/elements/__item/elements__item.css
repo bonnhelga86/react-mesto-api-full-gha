@@ -1,0 +1,10 @@
+.elements__item {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  position: relative;
+}
+
+.elements__item:hover {
+  cursor: pointer;
+}

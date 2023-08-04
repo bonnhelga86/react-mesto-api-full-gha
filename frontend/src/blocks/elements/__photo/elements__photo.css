@@ -1,0 +1,6 @@
+.elements__photo {
+  width: 100%;
+  aspect-ratio: 12/12;
+  object-fit: cover;
+  display: block;
+}
