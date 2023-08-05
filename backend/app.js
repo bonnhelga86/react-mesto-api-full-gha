@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://bonnhelga86.nomoreparties.co/'],
+  origin: ['http://localhost:3000', 'http://bonnhelga86.nomoreparties.co/'],
   credentials: true,
 }));
 
