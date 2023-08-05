@@ -1,4 +1,4 @@
-const baseUrl = 'http://api.bonnhelga86.nomoreparties.co';
+const baseUrl = 'https://api.bonnhelga86.nomoreparties.co';
 const headers = {
   'Content-Type': 'application/json'
 }
