@@ -1,4 +1,5 @@
-const baseUrl = 'https://api.bonnhelga86.nomoreparties.co';
+// const baseUrl = 'https://api.bonnhelga86.nomoreparties.co';
+const baseUrl = 'http://localhost:3001';
 
 const errorsCode = {
   register: {

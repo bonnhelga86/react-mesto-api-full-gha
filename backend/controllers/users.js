@@ -7,6 +7,8 @@ const { DuplicateError } = require('../errors/duplicate-error');
 const { AuthorizationError } = require('../errors/authorization-error');
 const { ValidationError } = require('../errors/validation-error');
 
+const { NODE_ENV, JWT_SECRET } = process.env;
+
 module.exports.getUsers = async (req, res, next) => {
   try {
     const users = await User.find({});
@@ -112,7 +114,11 @@ module.exports.login = async (req, res, next) => {
     const matched = await bcrypt.compare(password, user.password);
     if (!matched) throw new AuthorizationError('Неверные имя пользователя или пароль');
 
-    const token = jwt.sign({ _id: user._id }, 'user-secret-key', { expiresIn: '7d' });
+    const token = jwt.sign(
+      { _id: user._id },
+      NODE_ENV === 'production' ? JWT_SECRET : 'user-secret-key',
+      { expiresIn: '7d' },
+    );
     res.cookie('jwtToken', token, {
       maxAge: 3600000 * 24 * 7,
       httpOnly: true,

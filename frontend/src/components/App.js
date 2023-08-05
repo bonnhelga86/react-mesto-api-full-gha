@@ -73,11 +73,7 @@ function App() {
     auth.authorize(email, password)
         .then(data => {
           if (data){
-            setIsLoggedIn(true);
-            setCurrentUser(data);
-            setEmail(email);
-            navigate('/', {replace: true});
-            return data;
+            tokenCheck();
           }
         })
         .catch(error => {

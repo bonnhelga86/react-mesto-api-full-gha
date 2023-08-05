@@ -1,4 +1,5 @@
 const express = require('express');
+require('dotenv').config();
 const cors = require('cors');
 const mongoose = require('mongoose');
 const { errors } = require('celebrate');
@@ -17,7 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://bonnhelga86.nomoreparties.co'],
+  origin: ['http://localhost:3000', 'https://bonnhelga86.nomoreparties.co/'],
   credentials: true,
 }));
 
