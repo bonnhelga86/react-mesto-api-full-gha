@@ -8,7 +8,7 @@ const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const { errorHandler } = require('./middlewares/error-handler');
 
-const { PORT = 3001 } = process.env;
+const { PORT = 3000 } = process.env;
 
 const app = express();
 
@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://bonnhelga86.nomoreparties.co/'],
+  origin: ['http://localhost:3001', 'https://bonnhelga86.nomoreparties.co/'],
   credentials: true,
 }));
 
