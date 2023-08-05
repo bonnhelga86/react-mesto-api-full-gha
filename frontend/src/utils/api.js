@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3001';
+const baseUrl = 'https://api.bonnhelga86.nomoreparties.co';
 const headers = {
   'Content-Type': 'application/json'
 }
@@ -7,7 +7,6 @@ class Api {
   constructor(options) {
     this._baseUrl = options.baseUrl;
     this._headers = options.headers;
-    this._authorization = options.headers.authorization;
   }
 
   _getResponseData(res) {
@@ -56,13 +55,6 @@ class Api {
   }
 
   // Работа с пользователем
-  getUserInfo() {
-    return fetch(`${this._baseUrl}/users/me`, {
-      method: 'GET',
-      credentials: 'include',
-    }).then(this._getResponseData);
-  }
-
   setUserInfo(name, about) {
     return fetch(`${this._baseUrl}/users/me`, {
       method: 'PATCH',

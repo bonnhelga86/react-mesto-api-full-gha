@@ -37,9 +37,8 @@ function App() {
 
   React.useEffect(() => {
     if(isLoggedIn) {
-      Promise.all([api.getUserInfo(), api.getInitialCards()])
-      .then(([userData, cardsData]) => {
-        setCurrentUser(userData);
+      api.getInitialCards()
+      .then((cardsData) => {
         setCards(cardsData);
       })
       .catch(error => {
@@ -75,6 +74,7 @@ function App() {
         .then(data => {
           if (data){
             setIsLoggedIn(true);
+            setCurrentUser(data);
             setEmail(email);
             navigate('/', {replace: true});
             return data;
@@ -92,6 +92,7 @@ function App() {
       .then(data => {
         if(data) {
           setIsLoggedIn(true);
+          setCurrentUser(data);
           setEmail(data.email);
           navigate('/', {replace: true});
         }

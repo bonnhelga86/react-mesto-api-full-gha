@@ -16,18 +16,13 @@
 
 Для разработки серверного кода использовался фреймворк __Express__.
 Валидация осуществляется при помощи двух библиотек: __celebrate__ и __validator__.
-  
-Пожалуйста, прикрепите в это описание ссылку на сайт, размещенный на Яндекс.Облаке.
 
-Ссылка на проект [Mesto Russia](https://bonnhelga86.github.io/mesto-react/) на __GitHub Pages__.
-Ссылка на репозиторий [express-mesto-gha](https://github.com/bonnhelga86/express-mesto-gha).
-
-Адрес репозитория: https://github.com/...
+Адрес репозитория: https://github.com/bonnhelga86/react-mesto-api-full-gha
 
 ## Ссылки на проект
 
-IP-адрес x.x.x.x
+IP-адрес 62.84.122.147
 
-Frontend https://...
+Frontend https://bonnhelga86.nomoreparties.co/
 
-Backend https://...
+Backend https://api.bonnhelga86.nomoreparties.co/
