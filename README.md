@@ -21,7 +21,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 62.84.122.147
+IP 62.84.122.147
 
 Frontend https://bonnhelga86.nomoreparties.co/
 
