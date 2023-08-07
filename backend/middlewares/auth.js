@@ -15,6 +15,5 @@ module.exports.auth = (req, res, next) => {
     next(new AuthorizationError('Ошибка авторизации'));
   }
   req.user = payload;
-
   next();
 };

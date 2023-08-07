@@ -19,7 +19,7 @@ module.exports.createCard = async (req, res, next) => {
   try {
     const card = await Card.create({ name, link, owner });
     const newCard = await Card.findById(card._id).populate('owner');
-    res.send(newCard);
+    res.status(201).send(newCard);
   } catch (error) {
     if (error instanceof mongoose.Error.ValidationError) {
       next(new ValidationError('Некорректно заполнено одно из полей'));

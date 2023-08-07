@@ -51,7 +51,7 @@ module.exports.createUser = async (req, res, next) => {
       about: req.body.about,
       avatar: req.body.avatar,
     });
-    res.send({
+    res.status(201).send({
       email: user.email,
       name: user.name,
       about: user.about,
