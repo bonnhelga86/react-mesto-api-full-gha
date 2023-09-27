@@ -1,8 +1,6 @@
 .header__slider-menu {
   width: 24px;
   display: none;
-  /* flex-direction: column;
-  gap: 9px; */
   cursor: pointer;
 }
 
